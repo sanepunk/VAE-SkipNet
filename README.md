@@ -1,5 +1,6 @@
-# Encoder-Decoder Architecture: Step-wise Overview
-
+## Architecture Overview
+![Architecture Diagram](VAE-architecture.jpg)
+## Encoder-Decoder Architecture: Detailed Forward Flow Overview
 ## Encoder Steps
 
 | Step | Operation                                                                                   | Shape             |
