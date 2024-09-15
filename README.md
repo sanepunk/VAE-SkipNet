@@ -5,7 +5,7 @@ This project implements a Variational Autoencoder (VAE) using PyTorch. The archi
 - A **Decoder** that reconstructs the image from the latent space representation.
 
 ## Architecture Overview
-![Architecture Diagram](VAE-architecture_honeycomb_page.jpg)
+![Architecture Diagram](VAE-architecture.jpg)
 
 ## Encoder-Decoder Architecture: Detailed Forward Flow Overview
 
