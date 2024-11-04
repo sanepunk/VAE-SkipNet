@@ -108,17 +108,10 @@ class EncoderDecoder(nn.Module):
 		reconstructed = decoder(latent, skips, 256, 3)
 		return nn.relu(reconstructed), mu, log_var
 
-encoder_decoder = EncoderDecoder()
-params = encoder_decoder.init(jax.random.PRNGKey(42), jnp.ones([1, 256, 256, 3]))
-print('now')
 
 def loss(params, x, y):
 	x_reconstructed, mu, log_var = encoder_decoder.apply(params, x)
 	return jnp.mean((x_reconstructed - y)) + (-0.5 * jnp.sum(1 + log_var - jnp.square(mu) - jnp.exp(log_var)))
-
-
-optimizer = optax.adamw(0.001)
-opt_state = optimizer.init(params)
 
 
 def update(params, opt_state, x, y):
