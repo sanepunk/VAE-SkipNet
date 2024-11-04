@@ -3,3 +3,4 @@ optax
 jax
 numpy
 tensorflow
+matplotlib
