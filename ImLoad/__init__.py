@@ -1,1 +1,1 @@
-from .ImLoad import load_and_preprocess_image
+from .Load import load_and_preprocess_image
