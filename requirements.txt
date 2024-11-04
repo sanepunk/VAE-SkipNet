@@ -1,0 +1,6 @@
+flax
+optax
+jax
+numpy
+tensorflow
+matplotlib
